@@ -2,11 +2,8 @@ import os
 import os.path
 import numpy as np
 from PIL import Image
-# from torch.autograd.grad_mode import F
 from torchvision import transforms
 import torch
-from .transforms import VideoFilePathToTensor
-import cv2
 import glob
 
 def create_shuffled_data(dataset, outputdir, ssd_threshold=1200, ssd_upper_threshold=3000):
